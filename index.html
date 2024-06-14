@@ -1,19 +1,22 @@
-hmm<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rand ka card</title>
+    <title>Stacked Cards</title>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
       body {
         width: 100%;
         height: fit-content;
         margin: 0;
         padding: 0;
-background:red !important;
-color:#02cdcf !important;
       }
       .center {
         width: 100%;
@@ -82,7 +85,7 @@ color:#02cdcf !important;
         font-weight: 700;
       }
       .content {
-        font-family: mono;
+        font-family: poppins;
         font-size: 44px;
         font-weight: 700;
         line-height: 54px;
@@ -129,7 +132,6 @@ color:#02cdcf !important;
         align-items: center;
         justify-content: center;
       }
-
       /*CSS Code for responsiveness*/
       @media screen and (max-width: 800px) {
         .left {
@@ -141,7 +143,7 @@ color:#02cdcf !important;
   </head>
   <body>
     <div class="center">
-      <div class="top">Scroll Down Reni rand ❤️👇</div>
+      <div class="top">Scroll Down Reni❤️👇</div>
       <div class="stack-area">
         <div class="left">
           <div class="title">Dear Reni My Love</div>
@@ -154,41 +156,34 @@ color:#02cdcf !important;
         <div class="right">
           <div class="cards">
             <div class="card">
-              <div class="sub"> I love you Reni , and I've loved you all along. I miss you in my working days , you've been far away for far too long. I keep dreaming you'll be with me, and you'll never tere gand mra or aj k baad. dekh na jaeiye go</div>
-
+              <div class="sub"> I love you Reni , and I've loved you all along. I miss you in my working days , you've been far away for far too long. I keep dreaming you'll be with me, and you'll never go</div>
               <div class="sub"> ❤️Aryan❤️</div>
-
               <div class="content"></div>
               
             </div>
             <div class="card">
-              <div class="sub"> Sometimes you have to be apart from the people you love, but that doesn't make you love them any less. Sometimes it makes you love them more bhen chod ki </div>
-
+              <div class="sub"> Sometimes you have to be apart from the people you love, but that doesn't make you love them any less. Sometimes it makes you love them more</div>
               <div class="sub"> ❤️Aryan❤️</div>
               <div class="content"></div>
             </div>
             <div class="card">
               <div class="sub"> Whenever I start feeling sad, because I miss you, I remind myself how lucky I am to have someone so special to miss</div>
-
               <div class="sub"> ❤️Aryan❤️</div>
               <div class="content"></div>
             </div>
             <div class="card">
-              <div class="sub"> If anything, our time apart has only made me more certain that I want to spend my nights by your side, and my days with your heart boligand</div>
-
+              <div class="sub"> If anything, our time apart has only made me more certain that I want to spend my nights by your side, and my days with your heart</div>
               <div class="sub"> ❤️Aryan❤️</div>
               <div class="content"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="bottom">I Love My Love Reni rand ❤️</div>
+      <div class="bottom">I Love My Love Reni ❤️</div>
     </div>
-
     <script>
       let cards = document.querySelectorAll(".card");
       let stackArea = document.querySelector(".stack-area");
-
       function rotateCards() {
         let angle = 0;
         cards.forEach((card) => {
@@ -200,9 +195,7 @@ color:#02cdcf !important;
           }
         });
       }
-
       rotateCards();
-
       window.addEventListener("scroll", () => {
         let proportion =
           stackArea.getBoundingClientRect().top / window.innerHeight;
@@ -220,9 +213,7 @@ color:#02cdcf !important;
           rotateCards();
         }
       });
-
       //Code for responsiveness
-
       function adjust() {
         let windowWidth = window.innerWidth;
         let left = document.querySelector(".left");
@@ -234,9 +225,7 @@ color:#02cdcf !important;
         }
       }
       adjust();
-
       //detect Resize
-
       window.addEventListener("resize", adjust);
     </script>
     <hr>
